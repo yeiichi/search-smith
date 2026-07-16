@@ -48,6 +48,7 @@ Documentation = "https://search-smith.readthedocs.io/"
 Repository = "https://github.com/yeiichi/search-smith"
 Issues = "https://github.com/yeiichi/search-smith/issues"
 
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/search_smith"]
 
@@ -89,6 +90,7 @@ allow_zero_version = true
 major_on_zero = false
 commit_message = "chore(release): {version}"
 changelog_file = "CHANGELOG.md"
+
 
 [dependency-groups]
 dev = [
