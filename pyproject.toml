@@ -82,7 +82,7 @@ addopts = "-q"
 
 [tool.semantic_release]
 version_toml = ["pyproject.toml:project.version"]
-build_command = "uv lock && uv build"
+build_command = "python -m pip install uv && $(dirname $(python -c 'import sys; print(sys.executable)'))/uv lock && $(dirname $(python -c 'import sys; print(sys.executable)'))/uv build"
 assets = ["uv.lock"]
 tag_format = "v{version}"
 allow_zero_version = true

@@ -12,4 +12,3 @@ exclude_patterns = []
 
 html_theme = "furo"
 html_title = "search-smith"
-html_static_path = ["_static"]
